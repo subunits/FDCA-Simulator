@@ -48,3 +48,30 @@ Transposed CSV (t):
 Cell\Step,0,1,2,3
 0,0,0,0,1
 1,0,0,1,1
+
+FDCA Simulator Dependencies
+
+Required:
+- Standard C compiler:
+    - gcc (Linux/macOS/Windows via MinGW)
+    - clang (Linux/macOS)
+    - Visual Studio C compiler (Windows)
+- Standard C libraries:
+    - stdio.h
+    - stdlib.h
+    - time.h
+
+Optional / Platform-specific:
+- Windows:
+    - conio.h (for _kbhit() and _getch())
+    - windows.h (for Sleep())
+- Linux/macOS:
+    - unistd.h (for usleep())
+    - termios.h and sys/select.h (for non-blocking keyboard input)
+
+Notes:
+- The program does not require any external libraries or packages.
+- ANSI color output may not display correctly on Windows consoles prior to Windows 10.
+- Everything needed to compile and run is included in this package.
+
+
